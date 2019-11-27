@@ -2,12 +2,14 @@ import { Fragment } from 'react'
 import Head from 'next/head'
 import { GlobalStyle } from '../globalStyles'
 import Header from './Header'
+import Sidebar from './Sidebar'
+import Main from './Main'
 
-interface LayoutProps {
+interface ILayoutProps {
   title: string
 }
 
-const Layout: React.FC<LayoutProps> = ({ children, title }): JSX.Element => (
+const Layout: React.FC<ILayoutProps> = ({ children, title }): JSX.Element => (
   <Fragment>
     <GlobalStyle />
     <Head>
@@ -18,7 +20,10 @@ const Layout: React.FC<LayoutProps> = ({ children, title }): JSX.Element => (
       ></link>
     </Head>
     <Header />
-    <main>{children}</main>
+    <Main>
+      <Sidebar />
+      {children}
+    </Main>
     <footer>Footer</footer>
   </Fragment>
 )
