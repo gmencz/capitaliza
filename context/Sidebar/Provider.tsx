@@ -1,4 +1,4 @@
-import { FC, useReducer } from 'react'
+import { FC, useReducer, useContext } from 'react'
 import { SidebarContext } from '.'
 
 interface ISidebarProviderProps {
@@ -17,3 +17,5 @@ export const SidebarProvider: FC<ISidebarProviderProps> = ({
     </SidebarContext.Provider>
   )
 }
+
+export const useSidebarValue = () => useContext(SidebarContext)

@@ -11,7 +11,12 @@ export const Sidebar = styled.nav`
   position: fixed;
   box-shadow: 7px 0px 12px -9px rgba(0, 0, 0, 0.75);
   transition: all 0.3s cubic-bezier(0, 0, 0.2, 1);
-  /* transform: translateX(-100%); */
+  transform: translateX(-150%);
+
+  &.open {
+    transform: translateX(0%);
+  }
+
   & > div:first-of-type {
     margin-bottom: 2em;
   }
