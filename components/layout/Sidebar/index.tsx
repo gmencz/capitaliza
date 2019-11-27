@@ -2,6 +2,13 @@ import { FC, useState, Fragment } from 'react'
 import * as SC from './styles'
 import Link from 'next/link'
 import { Burger } from '../Header/styles'
+import {
+  subLinksPBC,
+  subLinksAC,
+  subLinksSRS,
+  subLinksRSC,
+  subLinksSPB
+} from './subLinks'
 
 const Arrow: FC = (): JSX.Element => (
   <svg className="svg-icon" width="20" height="20" viewBox="0 0 20 20">
@@ -44,8 +51,8 @@ const MenuItem: FC<IMenuItemProps> = ({
           {isToggled && (
             <ul style={{ marginLeft: '1em' }}>
               {subLinks.map((subLink, idx) => (
-                <li style={{ marginBottom: '1em' }}>
-                  <Link key={idx} href={subLink.to}>
+                <li key={idx} style={{ marginBottom: '1em' }}>
+                  <Link href={subLink.to}>
                     <a style={{ fontSize: '1.5rem', color: 'black' }}>
                       {subLink.text}
                     </a>
@@ -65,73 +72,6 @@ const MenuItem: FC<IMenuItemProps> = ({
 }
 
 const Sidebar: FC = (): JSX.Element => {
-  const subLinksPBC: Array<ISubLink> = [
-    {
-      to: '/obligations',
-      text: 'Sujetos Obligados / Obligaciones'
-    },
-    {
-      to: '/penalty-system',
-      text: 'Régimen Sancionador'
-    }
-  ]
-
-  const subLinksSPB: Array<ISubLink> = [
-    {
-      to: '/prevention-consult',
-      text: 'Consultoría en Prevención del Blanqueo de Capitales y FT'
-    },
-    {
-      to: '/prevention-audit',
-      text: 'Auditoría en Prevención del Blanqueo de Capitales y FT'
-    },
-    {
-      to: '/formation',
-      text: 'Formación'
-    }
-  ]
-
-  const subLinksRSC: Array<ISubLink> = [
-    {
-      to: '/dimensions',
-      text: 'Dimensiones'
-    },
-    {
-      to: '/benefits',
-      text: 'Beneficios'
-    }
-  ]
-
-  const subLinksSRS: Array<ISubLink> = [
-    {
-      to: '/consultory-rsc',
-      text: 'Consultoría RSC'
-    },
-    {
-      to: '/auditory-rsc',
-      text: 'Auditoría RSC'
-    },
-    {
-      to: '/formation-rsc',
-      text: 'Formación'
-    }
-  ]
-
-  const subLinksAC: Array<ISubLink> = [
-    {
-      to: '/contact',
-      text: 'Contacta'
-    },
-    {
-      to: '/suggestions',
-      text: 'Sugerencias'
-    },
-    {
-      to: '/budget-request',
-      text: 'Solicítanos un presupuesto'
-    }
-  ]
-
   return (
     <SC.Sidebar>
       <Burger inSidebar={true}>
