@@ -9,6 +9,7 @@ export const Sidebar = styled.nav`
   padding: 1.5em 2.75em 0 3.75em;
   top: 0;
   left: 0;
+  z-index: 99;
   overflow-y: auto;
   position: fixed;
   box-shadow: 7px 0px 12px -9px rgba(0, 0, 0, 0.75);
@@ -21,6 +22,7 @@ export const Sidebar = styled.nav`
 
   & > div:first-of-type {
     margin-bottom: 2em;
+    margin-left: 0.3em;
   }
 
   & > ul {
@@ -33,6 +35,7 @@ export const Sidebar = styled.nav`
       & > a {
         margin-bottom: 0.75em;
         padding: 0.7em;
+        color: #0d47a1;
         &.active {
           background-color: rgba(60, 64, 67, 0.1);
           border-radius: 4px;

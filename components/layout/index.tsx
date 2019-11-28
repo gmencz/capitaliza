@@ -4,6 +4,8 @@ import Header from './Header'
 import Sidebar from './Sidebar'
 import Main from './Main'
 import { SidebarProvider } from '../../context/Sidebar/Provider'
+import { useScrollPosition } from '@n8tb1t/use-scroll-position'
+import { useState } from 'react'
 
 interface ILayoutProps {
   title: string
@@ -25,6 +27,27 @@ const Layout: React.FC<ILayoutProps> = ({ children, title }): JSX.Element => {
     }
   }
 
+  const [scrollPos, setScrollPos] = useState<{
+    prevX: number
+    prevY: number
+    currentX: number
+    currentY: number
+  }>({
+    prevX: 0,
+    prevY: 0,
+    currentX: 0,
+    currentY: 0
+  })
+
+  useScrollPosition(({ prevPos, currPos }) => {
+    setScrollPos({
+      prevX: prevPos.x,
+      prevY: prevPos.y,
+      currentX: currPos.x,
+      currentY: currPos.y
+    })
+  })
+
   return (
     <SidebarProvider initialState={initialState} reducer={reducer}>
       <GlobalStyle />
@@ -35,8 +58,7 @@ const Layout: React.FC<ILayoutProps> = ({ children, title }): JSX.Element => {
           rel="stylesheet"
         ></link>
       </Head>
-
-      <Header />
+      <Header scrollPosition={scrollPos} />
       <Main>
         <Sidebar />
         {children}
