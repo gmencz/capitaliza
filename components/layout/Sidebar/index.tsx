@@ -1,6 +1,6 @@
 import { FC, useState, Fragment } from 'react'
 import * as SC from './styles'
-import Link from 'next/link'
+import Link from '../../activeLink'
 import { Burger } from '../Header/styles'
 import {
   subLinksPBC,
@@ -46,10 +46,8 @@ const MenuItem: FC<IMenuItemProps> = ({
             <ul style={{ marginLeft: '1em' }}>
               {subLinks.map((subLink, idx) => (
                 <li key={idx} style={{ marginBottom: '1em' }}>
-                  <Link href={subLink.to}>
-                    <a style={{ fontSize: '1.5rem', color: 'black' }}>
-                      {subLink.text}
-                    </a>
+                  <Link activeClassName="active" href={subLink.to}>
+                    <a style={{ fontSize: '1.5rem' }}>{subLink.text}</a>
                   </Link>
                 </li>
               ))}
@@ -57,7 +55,7 @@ const MenuItem: FC<IMenuItemProps> = ({
           )}
         </Fragment>
       ) : (
-        <Link href={to}>
+        <Link activeClassName="active" href={to}>
           <a>{children}</a>
         </Link>
       )}
@@ -97,6 +95,10 @@ const Sidebar: FC = (): JSX.Element => {
         <MenuItem subLinks={subLinksAC} isOpenable>
           Atención al Cliente
         </MenuItem>
+        <MenuItem to="/terms/ethical-management">
+          Política de Gestión Ética
+        </MenuItem>
+        <MenuItem to="/terms/privacy">Política de Privacidad</MenuItem>
       </ul>
     </SC.Sidebar>
   )

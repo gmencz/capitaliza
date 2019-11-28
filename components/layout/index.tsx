@@ -3,10 +3,7 @@ import { GlobalStyle } from '../globalStyles'
 import Header from './Header'
 import Sidebar from './Sidebar'
 import Main from './Main'
-import {
-  SidebarProvider,
-  useSidebarValue
-} from '../../context/Sidebar/Provider'
+import { SidebarProvider } from '../../context/Sidebar/Provider'
 
 interface ILayoutProps {
   title: string

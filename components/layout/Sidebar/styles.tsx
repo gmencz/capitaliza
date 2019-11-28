@@ -4,10 +4,12 @@ export const Sidebar = styled.nav`
   background-color: white;
   width: 60%;
   max-width: 375px;
-  height: 100vh;
+  min-height: 100vh;
   min-width: 275px;
   padding: 1.5em 2.75em 0 3.75em;
   top: 0;
+  left: 0;
+  overflow-y: auto;
   position: fixed;
   box-shadow: 7px 0px 12px -9px rgba(0, 0, 0, 0.75);
   transition: all 0.3s cubic-bezier(0, 0, 0.2, 1);
@@ -28,10 +30,17 @@ export const Sidebar = styled.nav`
     list-style-type: none;
 
     & > li {
-      margin-bottom: 3em;
-
       & > a {
         margin-bottom: 0.75em;
+        padding: 0.7em;
+        &.active {
+          background-color: rgba(60, 64, 67, 0.1);
+          border-radius: 4px;
+        }
+
+        &:hover {
+          background-color: rgba(160, 164, 167, 0.1);
+        }
       }
 
       svg {
@@ -56,6 +65,15 @@ export const Sidebar = styled.nav`
 
       & + ul {
         list-style-type: none;
+
+        a {
+          color: #202124;
+          margin-left: 0.5em;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
       }
     }
   }

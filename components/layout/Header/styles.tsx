@@ -63,5 +63,6 @@ export const LanguageSelector = styled.button`
   font-size: 1.65rem;
   font-weight: bold;
   cursor: pointer;
+  border-radius: 4px;
   border: none;
 `
