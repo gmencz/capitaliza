@@ -21,12 +21,7 @@ const Home: React.FC = (): JSX.Element => (
         <h4>Gestión socialmente responsable.</h4>
       </div>
     </div>
-    <div
-      style={{
-        zIndex: 2,
-        margin: '72px auto'
-      }}
-    >
+    <div className="info-cards__wrapper">
       <InfoCard imageSource="/benefits.png">
         <p>
           El retorno máximo para el accionista y la maximización del beneficio a

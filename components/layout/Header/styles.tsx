@@ -33,6 +33,10 @@ export const Header = styled.header<IHeaderProps>`
   h1 {
     font-size: 2.7rem;
   }
+
+  @media screen and (max-width: 345px) {
+    padding: 0 1.5em;
+  }
 `
 
 interface IBurgerProps {

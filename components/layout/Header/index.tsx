@@ -18,8 +18,6 @@ const Header: FC<IHeaderProps> = ({ scrollPosition }): JSX.Element => {
 
   const { prevX, prevY, currentX, currentY } = scrollPosition
 
-  console.log(currentY)
-
   if (currentY < prevY) {
     shouldShow = false
   } else {
