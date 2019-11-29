@@ -1,8 +1,9 @@
 import Layout from '../components/layout'
 import InfoCard from '../components/infoCard'
+import { FC } from 'react'
 
-const Home: React.FC = (): JSX.Element => (
-  <Layout title="Capitaliza - Inicio">
+const Home: FC = (): JSX.Element => (
+  <Layout isHomepage={true} title="Capitaliza - Inicio">
     <div
       style={{
         backgroundColor: '#1976d2',

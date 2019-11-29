@@ -6,12 +6,18 @@ import Main from './Main'
 import { SidebarProvider } from '../../context/Sidebar/Provider'
 import { useScrollPosition } from '@n8tb1t/use-scroll-position'
 import { useState } from 'react'
+import Footer from './Footer'
 
 interface ILayoutProps {
   title: string
+  isHomepage?: boolean
 }
 
-const Layout: React.FC<ILayoutProps> = ({ children, title }): JSX.Element => {
+const Layout: React.FC<ILayoutProps> = ({
+  children,
+  title,
+  isHomepage
+}): JSX.Element => {
   const initialState = {
     isSidebarOpen: false
   }
@@ -58,12 +64,12 @@ const Layout: React.FC<ILayoutProps> = ({ children, title }): JSX.Element => {
           rel="stylesheet"
         ></link>
       </Head>
-      <Header scrollPosition={scrollPos} />
-      <Main>
+      <Header isHomepage={isHomepage} scrollPosition={scrollPos} />
+      <Main isHomepage={isHomepage}>
         <Sidebar />
         {children}
       </Main>
-      <footer>Footer</footer>
+      <Footer />
     </SidebarProvider>
   )
 }

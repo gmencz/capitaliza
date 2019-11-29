@@ -3,12 +3,15 @@ import styled from 'styled-components'
 interface IHeaderProps {
   shouldShow: boolean
   isAfterHero: boolean
+  isHomepage: boolean
 }
 
 export const Header = styled.header<IHeaderProps>`
   background: ${props =>
     props.isAfterHero
       ? 'linear-gradient(145deg,#0d47a1,var(--primary-clr))'
+      : !props.isHomepage
+      ? 'white'
       : 'transparent'};
   position: fixed;
   transition: transform 0.3s cubic-bezier(0, 0, 0.2, 1);
@@ -32,6 +35,12 @@ export const Header = styled.header<IHeaderProps>`
 
   h1 {
     font-size: 2.7rem;
+    transition: color 0.3s cubic-bezier(0, 0, 0.2, 1);
+    color: ${props => (props.isHomepage ? 'white' : '#0D47A1')};
+  }
+
+  @media screen and (max-width: 400px) {
+    padding: ${props => (!props.isHomepage ? '0 1em' : undefined)};
   }
 
   @media screen and (max-width: 345px) {
@@ -41,6 +50,7 @@ export const Header = styled.header<IHeaderProps>`
 
 interface IBurgerProps {
   inSidebar: boolean
+  isHomepage: boolean
 }
 
 export const Burger = styled.div`
@@ -64,8 +74,9 @@ export const Burger = styled.div`
   }
 
   & > div {
+    transition: background-color 0.3s cubic-bezier(0, 0, 0.2, 1);
     background-color: ${(props: IBurgerProps) =>
-      props.inSidebar ? '#0d47a1' : 'white'};
+      props.inSidebar ? '#0d47a1' : props.isHomepage ? 'white' : '#0d47a1'};
     width: 100%;
     height: 3px;
     margin-bottom: 0.35em;

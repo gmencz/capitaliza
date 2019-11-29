@@ -1,6 +1,6 @@
 import * as SC from './styles'
 import { useSidebarValue } from '../../../context/Sidebar/Provider'
-import { FC, useState } from 'react'
+import { FC, useState, useEffect } from 'react'
 
 interface IHeaderProps {
   scrollPosition: {
@@ -9,31 +9,40 @@ interface IHeaderProps {
     currentX: number
     currentY: number
   }
+  isHomepage: boolean
 }
 
-const Header: FC<IHeaderProps> = ({ scrollPosition }): JSX.Element => {
+const Header: FC<IHeaderProps> = ({
+  scrollPosition,
+  isHomepage
+}): JSX.Element => {
   const [_, dispatch] = useSidebarValue()
   let shouldShow = true
   let isAfterHero = false
 
   const { prevX, prevY, currentX, currentY } = scrollPosition
 
-  if (currentY < prevY) {
+  if (currentY < prevY && isHomepage) {
     shouldShow = false
   } else {
     shouldShow = true
   }
 
-  if (currentY <= -520) {
+  if (currentY <= -520 && isHomepage) {
     isAfterHero = true
-  } else {
+  } else if (currentY > -520 && isHomepage) {
     isAfterHero = false
   }
 
   return (
-    <SC.Header shouldShow={shouldShow} isAfterHero={isAfterHero}>
+    <SC.Header
+      isHomepage={!isHomepage ? isAfterHero : isHomepage}
+      shouldShow={shouldShow}
+      isAfterHero={isAfterHero}
+    >
       <div>
         <SC.Burger
+          isHomepage={!isHomepage ? isAfterHero : isHomepage}
           onClick={() => dispatch({ type: 'OPEN_SIDEBAR' })}
           inSidebar={false}
         >

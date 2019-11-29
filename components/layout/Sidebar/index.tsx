@@ -70,6 +70,7 @@ const Sidebar: FC = (): JSX.Element => {
   return (
     <SC.Sidebar ref={ref} className={isSidebarOpen ? 'open' : undefined}>
       <Burger
+        isHomepage={false}
         onClick={() => dispatch({ type: 'CLOSE_SIDEBAR' })}
         inSidebar={true}
       >
@@ -79,7 +80,9 @@ const Sidebar: FC = (): JSX.Element => {
       </Burger>
       <ul>
         <MenuItem to="/">Inicio</MenuItem>
-        <MenuItem to="/equantia-group">Grupo equantia</MenuItem>
+        <li>
+          <a href="https://equantia.com">Grupo equantia</a>
+        </li>
         <MenuItem subLinks={subLinksPBC} isOpenable>
           Prevención Blanqueo Capitales
         </MenuItem>

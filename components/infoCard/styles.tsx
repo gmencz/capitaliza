@@ -8,10 +8,12 @@ export const InfoCard = styled.article`
   min-height: 310px;
   align-items: center;
   max-width: 1000px;
-  border: 1px solid rgb(231, 235, 238);
+  color: rgb(17, 51, 85);
+  border: 2px solid rgb(245, 247, 248);
 
   p {
     font-size: 2rem;
+    font-weight: bold;
   }
 
   div:nth-of-type(2) {

@@ -18,5 +18,20 @@ export const GlobalStyle = createGlobalStyle`
 
   body {
     font-family: 'Raleway', sans-serif;
+
+    &::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #f5f5f5;
+  }
+
+  &::-webkit-scrollbar {
+    width: 7px;
+    background-color: #f5f5f5;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #0d47a1;
+    border-radius: 30px;
+  }
   }
 `
