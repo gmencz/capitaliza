@@ -63,6 +63,7 @@ const Layout: React.FC<ILayoutProps> = ({
           href="https://fonts.googleapis.com/css?family=Raleway:400,700,900&display=swap"
           rel="stylesheet"
         />
+        <link rel="shortcut icon" href="/favicon.ico" />
       </Head>
       <Header isHomepage={isHomepage} scrollPosition={scrollPos} />
       <Main isHomepage={isHomepage}>
