@@ -54,6 +54,43 @@ export const Main = styled.main<IMainProps>`
   }
 
   .obligations__wrapper {
+    &.prevention-consult {
+      article {
+        flex-basis: 100%;
+        max-width: initial;
+        max-width: 1200px;
+
+        p {
+          font-weight: bold;
+        }
+      }
+    }
+  }
+
+  .obligations__wrapper {
+    &.penalty {
+      h1 {
+        margin-bottom: 1em;
+      }
+
+      & > p {
+        font-weight: bold;
+        margin-bottom: 1em;
+      }
+
+      article {
+        h2 {
+          text-decoration: underline;
+        }
+
+        p {
+          font-weight: bold;
+          font-size: 1.55rem;
+          text-align: left;
+        }
+      }
+    }
+
     h1 {
       font-size: 2.4rem;
       margin-bottom: 2em;
@@ -74,6 +111,7 @@ export const Main = styled.main<IMainProps>`
         h2 {
           font-size: 2.15rem;
           margin-bottom: 25px;
+          text-decoration: underline;
         }
 
         ul {

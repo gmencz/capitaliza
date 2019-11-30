@@ -60,9 +60,9 @@ const Layout: React.FC<ILayoutProps> = ({
       <Head>
         <title>{title}</title>
         <link
-          href="https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap"
+          href="https://fonts.googleapis.com/css?family=Raleway:400,700,900&display=swap"
           rel="stylesheet"
-        ></link>
+        />
       </Head>
       <Header isHomepage={isHomepage} scrollPosition={scrollPos} />
       <Main isHomepage={isHomepage}>
