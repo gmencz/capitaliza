@@ -8,7 +8,7 @@ export const Main = styled.main<IMainProps>`
   display: flex;
   flex-direction: column;
   color: rgb(17, 51, 85);
-  min-height: 100vh;
+  min-height: calc(100vh - 190px);
   margin-top: ${props => (props.isHomepage ? '0' : '100px')};
   padding: ${props => (!props.isHomepage ? '0 4.75em' : undefined)};
 

@@ -18,7 +18,7 @@ export const Header = styled.header<IHeaderProps>`
   top: 0;
   left: 0;
   width: 100%;
-  min-height: 80px;
+  height: 80px;
   color: white;
   padding: 0 3.75em;
   display: flex;
