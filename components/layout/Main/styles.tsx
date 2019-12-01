@@ -16,6 +16,17 @@ export const Main = styled.main<IMainProps>`
     padding: ${props => (!props.isHomepage ? '0 1.5em' : undefined)};
   }
 
+  .contact__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h1 {
+      font-size: 2.75rem;
+      margin-bottom: 2em;
+    }
+  }
+
   .info-cards__wrapper {
     display: flex;
     flex-direction: column;

@@ -60,7 +60,7 @@ const Layout: React.FC<ILayoutProps> = ({
       <Head>
         <title>{title}</title>
         <link
-          href="https://fonts.googleapis.com/css?family=Raleway:400,700,900&display=swap"
+          href="https://fonts.googleapis.com/css?family=Raleway:400,700,900&disp lay=swap"
           rel="stylesheet"
         />
         <link rel="shortcut icon" href="/favicon.ico" />
