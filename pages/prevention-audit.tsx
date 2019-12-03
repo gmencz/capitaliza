@@ -19,7 +19,7 @@ const PreventionAudit: FC = () => {
               Capitales e Infracciones Monetarias o de sus Órganos de apoyo
               durante los cinco años siguientes a la fecha de emisión. Por
               tanto,{' '}
-              <span style={{ fontWeight: 'bolder' }}>
+              <span className="bold">
                 se someterán a examen las políticas y procedimientos en materia
                 de diligencia debida, información, conservación de documentos,
                 control interno, evaluación, gestión de riesgos y comunicación

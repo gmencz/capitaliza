@@ -8,9 +8,9 @@ const Privacy: FC = () => (
       <div>
         <article>
           <p>
-            EQUANTIA GLOBAL BUSINESS, S.L. en cumplimiento de la Ley 34/2002, de
-            11 de julio, de Servicios de la Sociedad de la Información y de
-            Comercio Electrónico, le informa:
+            <span className="bold">EQUANTIA GLOBAL BUSINESS, S.L.</span> en
+            cumplimiento de la Ley 34/2002, de 11 de julio, de Servicios de la
+            Sociedad de la Información y de Comercio Electrónico, le informa:
           </p>
           <br />
           <ul>

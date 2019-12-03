@@ -8,35 +8,25 @@ const Dimensions: FC = () => {
         <h1>Dimensiones</h1>
         <p>
           El concepto de{' '}
-          <span style={{ fontWeight: 'bolder' }}>
-            Responsabilidad Social Corporativa
-          </span>{' '}
-          comprende las siguientes{' '}
-          <span style={{ fontWeight: 'bolder' }}>dimensiones:</span>
+          <span className="bold">Responsabilidad Social Corporativa</span>{' '}
+          comprende las siguientes <span className="bold">dimensiones:</span>
         </p>
         <div>
           <article>
             <h2>Interna</h2>
             <ol>
               <li>
-                Gestión de{' '}
-                <span style={{ fontWeight: 'bolder' }}>Recursos Humanos.</span>
+                Gestión de <span className="bold">Recursos Humanos.</span>
               </li>
               <li>
-                <span style={{ fontWeight: 'bolder' }}>
-                  Salud y seguridad en el trabajo.
-                </span>
+                <span className="bold">Salud y seguridad en el trabajo.</span>
               </li>
               <li>
-                <span style={{ fontWeight: 'bolder' }}>
-                  Adaptación al cambio.
-                </span>
+                <span className="bold">Adaptación al cambio.</span>
               </li>
               <li>
-                <span style={{ fontWeight: 'bolder' }}>
-                  Gestión del impacto ambiental
-                </span>{' '}
-                y de los recursos naturales.
+                <span className="bold">Gestión del impacto ambiental</span> y de
+                los recursos naturales.
               </li>
             </ol>
           </article>
@@ -53,11 +43,10 @@ const Dimensions: FC = () => {
           </article>
         </div>
         <p>
-          "Ser{' '}
-          <span style={{ fontWeight: 'bolder' }}>socialmente responsable</span>{' '}
-          no significa solamente cumplir plenamente las obligaciones jurídicas
-          (o legislativas), sino ir más allá de su cumplimiento{' '}
-          <span style={{ fontWeight: 'bolder' }}>
+          "Ser <span className="bold">socialmente responsable</span> no
+          significa solamente cumplir plenamente las obligaciones jurídicas (o
+          legislativas), sino ir más allá de su cumplimiento{' '}
+          <span className="bold">
             invirtiendo más en el capital humano, el entorno y las relaciones
             con los interlocutores".
           </span>

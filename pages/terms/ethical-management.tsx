@@ -8,18 +8,22 @@ const EthicalManagement: FC = () => (
       <div>
         <article>
           <p>
-            Equantia Global Business, S.L. ha afirmado su compromiso ético en
-            todas sus áreas de gestión. Este compromiso integra tanto los
-            valores que ha adoptado como propios (la confianza, la
-            responsabilidad, la sinceridad y el trabajo en equipo), como la
-            misión y visión de la empresa.
+            <span className="bold">Equantia Global Business, S.L.</span> ha
+            afirmado su compromiso ético en todas sus áreas de gestión. Este
+            compromiso integra tanto los valores que ha adoptado como propios
+            (la confianza, la responsabilidad, la sinceridad y el trabajo en
+            equipo), como la misión y visión de la empresa.
           </p>
           <br />
           <p>
-            Y de este compromiso se deriva la Política de Gestión Ética y
-            Socialmente Responsable que regulará el Sistema de Gestión Ética de
-            la empresa. Esta política se rige por las siguientes cláusulas:
+            Y de este compromiso se deriva la{' '}
+            <span className="bold">
+              Política de Gestión Ética y Socialmente Responsable
+            </span>{' '}
+            que regulará el Sistema de Gestión Ética de la empresa. Esta
+            política se rige por las siguientes cláusulas:
           </p>
+          <br />
           <ol>
             <li>
               Cumplimiento del ordenamiento jurídico vigente, tanto formal como
@@ -76,8 +80,9 @@ const EthicalManagement: FC = () => (
             </li>
           </ol>
           <p>
-            La Dirección de Equantia Global Business, S.L., hace suya esta
-            política y se compromete a impulsarla.
+            La Dirección de{' '}
+            <span className="bold">Equantia Global Business, S.L.</span> , hace
+            suya esta política y se compromete a impulsarla.
           </p>
           <br />
           <p>

@@ -14,11 +14,27 @@ export const Form = styled.form`
     width: 100%;
   }
 
+  @media screen and (max-width: 700px) {
+    padding: 2em 0;
+    width: 100%;
+  }
+
   .form-group {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 1.75rem;
+
+    @media screen and (max-width: 700px) {
+      flex-direction: column;
+      align-items: flex-start;
+
+      label {
+        margin-bottom: 0.5em;
+        margin-right: 0;
+        margin-left: 0.8em;
+      }
+    }
 
     label {
       font-size: 1.6rem;
@@ -39,6 +55,20 @@ export const Form = styled.form`
       &:focus {
         box-shadow: 0 0 0 1px #e4effa;
       }
+
+      @media screen and (max-width: 700px) {
+        width: 100%;
+        border-radius: 0px;
+        background-color: transparent;
+        min-width: 200px;
+        transition: border-bottom 200ms ease-in-out;
+
+        border-bottom: 1px solid #e6eef8;
+        &:focus {
+          box-shadow: none;
+          border-bottom: 1px solid #0d47a1;
+        }
+      }
     }
 
     select {
@@ -54,6 +84,16 @@ export const Form = styled.form`
 
       &:focus {
         box-shadow: 0 0 0 1px #e4effa;
+      }
+
+      @media screen and (max-width: 700px) {
+        width: 100%;
+        border-radius: 0px;
+        background-color: transparent;
+        border-bottom: 1px solid #e6eef8;
+        &:focus {
+          box-shadow: none;
+        }
       }
     }
   }

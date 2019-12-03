@@ -22,4 +22,8 @@ export const Button = styled.button<IButtonProps>`
     background-color: ${({ primary }) => (primary ? '#4687EC' : 'red')};
     transform: translateY(-1px);
   }
+
+  @media screen and (max-width: 350px) {
+    min-width: ${({ primary }) => (primary ? '200px' : 'initial')};
+  }
 `

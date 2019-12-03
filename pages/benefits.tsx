@@ -15,47 +15,36 @@ const Benefits: FC = () => {
             <br />
             <ol>
               <li>
-                Mejora la{' '}
-                <span style={{ fontWeight: 'bolder' }}>imagen general</span> de
-                la entidad.
+                Mejora la <span className="bold">imagen general</span> de la
+                entidad.
               </li>
               <li>
                 Facilita el{' '}
-                <span style={{ fontWeight: 'bolder' }}>
-                  acceso a la financiación.
-                </span>
+                <span className="bold">acceso a la financiación.</span>
               </li>
               <li>
                 Contribuye a la{' '}
-                <span style={{ fontWeight: 'bolder' }}>
-                  motivación de los empleados
-                </span>
-                , la identificación con la{' '}
-                <span style={{ fontWeight: 'bolder' }}>
-                  cultura de la entidad
-                </span>
-                , la cohesión y a una{' '}
-                <span style={{ fontWeight: 'bolder' }}>
+                <span className="bold">motivación de los empleados</span>, la
+                identificación con la{' '}
+                <span className="bold">cultura de la entidad</span>, la cohesión
+                y a una{' '}
+                <span className="bold">
                   mayor seguridad y salud en el trabajo.
                 </span>
               </li>
               <li>
                 Contribuye a la{' '}
-                <span style={{ fontWeight: 'bolder' }}>
-                  fidelización de los clientes.
-                </span>
+                <span className="bold">fidelización de los clientes.</span>
               </li>
               <li>
-                <span style={{ fontWeight: 'bolder' }}>
-                  Facilita la confianza
-                </span>{' '}
-                de nuestras partes interesadas (proveedores, subcontratistas,
-                inversores, etc).
+                <span className="bold">Facilita la confianza</span> de nuestras
+                partes interesadas (proveedores, subcontratistas, inversores,
+                etc).
               </li>
             </ol>
             <p>
-              <span style={{ fontWeight: 'bolder' }}>CAPITALIZA</span> es una
-              <span style={{ fontWeight: 'bolder' }}>
+              <span className="bold">CAPITALIZA</span> es una
+              <span className="bold">
                 {' '}
                 consultora comprometida con el desarrollo
               </span>

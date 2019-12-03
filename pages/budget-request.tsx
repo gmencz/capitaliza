@@ -46,6 +46,7 @@ const BudgetRequest: FC = () => {
               required
               name="nombre-entidad"
               id="nombre-entidad"
+              placeholder="Sociedades Fundamentales S.L."
             />
           </div>
           <div className="form-group">
@@ -57,6 +58,7 @@ const BudgetRequest: FC = () => {
               required
               name="persona-contacto"
               id="persona-contacto"
+              placeholder="Elena"
             />
           </div>
           <div className="form-group">
@@ -66,6 +68,7 @@ const BudgetRequest: FC = () => {
               required
               name="domicilio-social"
               id="domilicio-social"
+              placeholder="Plaza Pablo Ruiz Picasso"
             />
           </div>
           <div className="form-group">
@@ -75,6 +78,7 @@ const BudgetRequest: FC = () => {
               required
               name="domicilio-actividad"
               id="domilicio-actividad"
+              placeholder="Pintor Sorolla, 2-4 46002 Valencia"
             />
           </div>
           <div className="form-group">
@@ -84,6 +88,7 @@ const BudgetRequest: FC = () => {
               required
               name="telefono-email"
               id="telefono-email"
+              placeholder="937 37 29 07"
             />
           </div>
           <div className="form-group">
@@ -94,6 +99,7 @@ const BudgetRequest: FC = () => {
               type="text"
               name="sector-tipoactividad"
               id="sector-tipoactividad"
+              placeholder="Transportes"
               required
             />
           </div>
@@ -104,6 +110,7 @@ const BudgetRequest: FC = () => {
             <textarea
               name="observaciones"
               id="observaciones"
+              placeholder="Escriba sus observaciones"
               rows={5}
               required
             ></textarea>

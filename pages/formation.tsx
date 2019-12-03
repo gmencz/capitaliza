@@ -15,10 +15,7 @@ const Formation: FC = () => {
             </p>
             <br />
             <p>
-              Nuestra{' '}
-              <span style={{ fontWeight: 'bolder' }}>
-                oferta de servicio integral
-              </span>{' '}
+              Nuestra <span className="bold">oferta de servicio integral</span>{' '}
               incluye:
             </p>
             <br />
@@ -61,7 +58,7 @@ const Formation: FC = () => {
             <p>
               Nuestro objetivo es dotar de nuevas competencias profesionales,
               tanto específicas como transversales, a{' '}
-              <span style={{ fontWeight: 'bolder' }}>
+              <span className="bold">
                 mandos intermedios y personal directivo de empresas
               </span>
               , a través de un tipo de formación diseñada a medida (tanto en

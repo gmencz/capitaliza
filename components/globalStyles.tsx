@@ -36,4 +36,8 @@ export const GlobalStyle = createGlobalStyle`
     border-radius: 30px;
   }
   }
+
+  span.bold {
+    font-weight: bolder;
+  }
 `

@@ -124,15 +124,17 @@ export const Main = styled.main<IMainProps>`
 
       article {
         flex-basis: 49%;
-        border: 2px solid rgb(245, 247, 248);
+        box-shadow: 0px 0px 20px -14px rgba(0, 0, 0, 0.75);
+
         padding: 1.75em 1.5em 1.75em 1.75em;
         margin-bottom: 20px;
         max-width: 700px;
 
         h2 {
-          font-size: 2.15rem;
+          font-size: 1.8rem;
           margin-bottom: 25px;
           text-decoration: underline;
+          color: #0d47a1;
         }
 
         ul {
@@ -174,7 +176,7 @@ export const Main = styled.main<IMainProps>`
     }
 
     p {
-      font-size: 1.9rem;
+      font-size: 1.6rem;
       font-weight: 500;
       text-align: justify;
     }

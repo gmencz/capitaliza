@@ -23,17 +23,21 @@ const PreventionConsult: FC = () => {
               <li>Política de admisión de clientes y fichas KYC</li>
               <li>Formación a empleados y directivos</li>
             </ol>
-            <p style={{ fontWeight: 'bold', fontSize: '1.6rem' }}>
-              La normativa sobre Prevención del Blanqueo de Capitales y
-              Financiación del Terrorismo, es extensa, compleja y está sometida
-              a importantes modificaciones y novedades legislativas de
-              procedencia internacional, dando respuesta a la prioridad de las
-              autoridades europeas, convirtiendo la lucha contra el blanqueo, la
-              corrupción y la financiación del terrorismo, en una prioridad.
-              Desde CAPITALIZA desarrollamos un método sencillo y práctico, de
-              cumplimiento de los preceptos legales en estas materias y
-              contribuimos a la protección de la integridad del sistema
-              financiero y de otros sectores de actividad económica
+            <p>
+              La normativa sobre{' '}
+              <span className="bold">
+                Prevención del Blanqueo de Capitales y Financiación del
+                Terrorismo
+              </span>
+              , es extensa, compleja y está sometida a importantes
+              modificaciones y novedades legislativas de procedencia
+              internacional, dando respuesta a la prioridad de las autoridades
+              europeas, convirtiendo la lucha contra el blanqueo, la corrupción
+              y la financiación del terrorismo, en una prioridad. Desde
+              <span className="bold">CAPITALIZA</span> desarrollamos un método
+              sencillo y práctico, de cumplimiento de los preceptos legales en
+              estas materias y contribuimos a la protección de la integridad del
+              sistema financiero y de otros sectores de actividad económica
               relacionados. Dicho método cuenta con la garantía total de
               cumplimiento por nuestra parte, en base a la legislación
               relacionada:
@@ -54,21 +58,32 @@ const PreventionConsult: FC = () => {
                 del Experto Externo
               </li>
             </ol>
-            <p style={{ fontWeight: 'bold', fontSize: '1.6rem' }}>
-              El Banco de España, por medio del SEPBLAC (Comisión de Prevención
-              de Blanqueo de Capitales e Infracciones Monetarias), vela por el
-              cumplimiento de las obligaciones derivadas de la Ley 10/2010, que
-              presenta un régimen sancionador muy duro, partiendo de la
-              tipificación de las sanciones como leves, graves y muy graves, y
-              con las consiguientes consecuencias en forma de amonestación
-              pública o privada (según el caso) y con su consiguiente sanción
-              económica, mínima de 60.000€ para casos leves y hasta 1.500.000€
-              para casos muy graves. Añadir que también serán sancionados desde
-              3.000€ hasta 60.000€, los administradores o directivos que fuesen
-              responsables de la infracción.
+            <p>
+              El <span className="bold">Banco de España</span>, por medio del
+              <span className="bold">
+                {' '}
+                SEPBLAC (Comisión de Prevención de Blanqueo de Capitales e
+                Infracciones Monetarias)
+              </span>
+              , vela por el cumplimiento de las obligaciones derivadas de la Ley
+              10/2010, que presenta un régimen sancionador muy duro, partiendo
+              de la tipificación de las sanciones como leves, graves y muy
+              graves, y con las consiguientes consecuencias en forma de
+              amonestación pública o privada (según el caso) y con su
+              consiguiente sanción económica,{' '}
+              <span className="bold">
+                mínima de 60.000€ para casos leves y hasta 1.500.000€ para casos
+                muy graves.
+              </span>{' '}
+              Añadir que también serán sancionados desde 3.000€ hasta 60.000€,
+              los administradores o directivos que fuesen responsables de la
+              infracción.
             </p>
             <br />
-            <h2>El cumplimiento de las obligaciones conlleva:</h2>
+            <h2>
+              El cumplimiento de las <span className="bold">obligaciones</span>{' '}
+              conlleva:
+            </h2>
             <ol>
               <li>
                 Manual de procedimientos para la Prevención del Blanqueo de
@@ -99,7 +114,8 @@ const PreventionConsult: FC = () => {
               <li>Formación para empleados y directivos</li>
             </ol>
             <h2>
-              Los <strong>sectores de actividad</strong> afectos son:
+              Los <span className="bold">sectores de actividad</span> afectos
+              son:
             </h2>
             <ol>
               <li>Entidades de crédito</li>

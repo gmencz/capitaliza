@@ -27,21 +27,19 @@ const ConsultoryRSC: FC = () => {
               En la comunicación al Parlamento Europeo, al Consejo y al Comité
               Económico y Social Europeo, de 22 de marzo de 2006, la Comisión
               Europea advertía que “Europa precisa de{' '}
-              <span style={{ fontWeight: 'bolder' }}>
+              <span className="bold">
                 empresas que hagan aquello que hacen mejor:
               </span>{' '}
               suministrar productos y servicios que den valor añadido a la
               sociedad y desplegar el espíritu empresarial y la creatividad para
               crear valor y empleo. Pero no necesita empresas sin más, sino
-              <span style={{ fontWeight: 'bolder' }}>
-                empresas socialmente responsables
-              </span>
-              , que asuman su cuota de responsabilidad en la marcha de los
-              asuntos europeos”.
+              <span className="bold">empresas socialmente responsables</span>,
+              que asuman su cuota de responsabilidad en la marcha de los asuntos
+              europeos”.
             </p>
             <br />
             <br />
-            <p style={{ fontWeight: 'bold' }}>
+            <p>
               Asumir los principios de la RSC no significa únicamente estar de
               acuerdo con los mismos, sino que empresas y organizaciones deben
               llevar dichos principios a la práctica, mediante la

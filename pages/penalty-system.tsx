@@ -7,8 +7,9 @@ const PenaltySystem: FC = () => {
       <section className="obligations__wrapper penalty">
         <h1>Régimen Sancionador</h1>
         <p>
-          Las infracciones administrativas previstas se clasifican en muy
-          graves, graves y leves, y tienen el siguiente régimen sancionador:
+          Las infracciones administrativas previstas se clasifican en{' '}
+          <span className="bold">muy graves, graves y leves</span>, y tienen el
+          siguiente régimen sancionador:
         </p>
         <div>
           <article>

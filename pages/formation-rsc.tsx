@@ -14,7 +14,10 @@ const FormationRSC: FC = () => {
               la elaboración de programas a medida.
             </p>
             <br />
-            <p>Nuestra oferta de servicio integral incluye:</p>
+            <p>
+              Nuestra <span className="bold">oferta de servicio integral</span>{' '}
+              incluye:
+            </p>
             <br />
             <ol>
               <li>Detección de necesidades.</li>
@@ -54,17 +57,23 @@ const FormationRSC: FC = () => {
               formación (tanto específica como transversal) orientada
               exclusivamente al colectivo de personas que ocupan la Dirección de
               las empresas o los puestos de mando intermedio. Éste es
-              precisamente nuestro público destinatario y nuestra diferenciación
-              en el mercado.
+              precisamente{' '}
+              <span className="bold">
+                nuestro público destinatario y nuestra diferenciación en el
+                mercado.
+              </span>
             </p>
             <br />
             <p>
               Nuestro objetivo es dotar de nuevas competencias profesionales,
-              tanto específicas como transversales, a mandos intermedios y
-              personal directivo de empresas, a través de un tipo de formación
-              diseñada a medida (tanto en contenido como en modalidad de
-              impartición) y que redunde en beneficio de la organización
-              (manteniéndola en un alto nivel de competitividad en el mercado)
+              tanto específicas como transversales, a{' '}
+              <span className="bold">
+                mandos intermedios y personal directivo de empresas
+              </span>
+              , a través de un tipo de formación diseñada a medida (tanto en
+              contenido como en modalidad de impartición) y que redunde en
+              beneficio de la organización (manteniéndola en un alto nivel de
+              competitividad en el mercado)
             </p>
             <p style={{ marginTop: '2rem' }}>Entidad colaboradora de:</p>
             <br />
