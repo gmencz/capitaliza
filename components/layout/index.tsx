@@ -63,6 +63,8 @@ const Layout: React.FC<ILayoutProps> = ({
           href="https://fonts.googleapis.com/css?family=Raleway:400,700,900&disp lay=swap"
           rel="stylesheet"
         />
+        <meta name="description" content="CAPITALIZA les va a ayudar a tener entidades más rentables, a obtener mayores beneficios, a mejorar su imagen global y a obtener el reconocimiento en el mercado tan deseado, partiendo de una gestión socialmente responsable." />
+        <meta name=”robots” content=”index, follow” />
         <link rel="shortcut icon" href="/favicon.ico" />
       </Head>
       <Header isHomepage={isHomepage} scrollPosition={scrollPos} />
