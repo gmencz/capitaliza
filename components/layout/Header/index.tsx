@@ -50,7 +50,9 @@ const Header: FC<IHeaderProps> = ({
           <div></div>
           <div></div>
         </SC.Burger>
-        <h1>capitaliza &reg;</h1>
+        <h1>
+          capitaliza <span>&reg;</span>
+        </h1>
       </div>
       <SC.LanguageSelector>ES</SC.LanguageSelector>
     </SC.Header>

@@ -37,6 +37,13 @@ export const Header = styled.header<IHeaderProps>`
     font-size: 2.7rem;
     transition: color 0.3s cubic-bezier(0, 0, 0.2, 1);
     color: ${props => (props.isHomepage ? 'white' : '#0D47A1')};
+
+    span {
+      font-size: 1.4rem;
+      position: relative;
+      top: -10px;
+      left: -5px;
+    }
   }
 
   @media screen and (max-width: 400px) {

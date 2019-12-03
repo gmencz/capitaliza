@@ -1,6 +1,7 @@
 import styled from 'styled-components'
+import { IInfoCardProps } from './index'
 
-export const InfoCard = styled.article`
+export const InfoCard = styled.article<IInfoCardProps>`
   z-index: 2;
   margin-bottom: 4em;
   display: flex;
@@ -12,8 +13,8 @@ export const InfoCard = styled.article`
   border: 2px solid rgb(245, 247, 248);
 
   p {
-    font-size: 2rem;
     font-weight: bold;
+    font-size: 1.8rem;
   }
 
   div:nth-of-type(2) {

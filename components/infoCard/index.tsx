@@ -1,13 +1,13 @@
 import { FC } from 'react'
 import * as SC from './styles'
 
-interface IInfoCardProps {
-  imageSource: string
+export interface IInfoCardProps {
+  imageSource?: string
 }
 
 const InfoCard: FC<IInfoCardProps> = ({ children, imageSource }) => (
   <SC.InfoCard>
-    <SC.HeroImage imageSource={imageSource} />
+    {imageSource && <SC.HeroImage imageSource={imageSource} />}
     <div>{children}</div>
   </SC.InfoCard>
 )

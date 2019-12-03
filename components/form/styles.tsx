@@ -7,9 +7,11 @@ export const Form = styled.form`
   padding: 2em;
   display: flex;
   flex-direction: column;
+  margin-bottom: 48px;
 
   button[type='submit'] {
     align-self: flex-end;
+    width: 100%;
   }
 
   .form-group {
@@ -18,14 +20,9 @@ export const Form = styled.form`
     align-items: center;
     margin-bottom: 1.75rem;
 
-    &:last-of-type {
-      label {
-        align-self: flex-start;
-      }
-    }
-
     label {
       font-size: 1.6rem;
+      margin-right: 1em;
       font-weight: bold;
     }
 
@@ -38,6 +35,23 @@ export const Form = styled.form`
       padding: 0.65em;
       font-size: 1.65rem;
       border-radius: 4px;
+      resize: none;
+      &:focus {
+        box-shadow: 0 0 0 1px #e4effa;
+      }
+    }
+
+    select {
+      width: 300px;
+      padding: 0.65em;
+      outline: none;
+      border: none;
+      background-color: #f6f9fc;
+      border-radius: 4px;
+      color: #0d47a1;
+      font-family: 'Raleway', sans-serif;
+      font-size: 1.65rem;
+
       &:focus {
         box-shadow: 0 0 0 1px #e4effa;
       }

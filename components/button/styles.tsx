@@ -5,6 +5,7 @@ export const Button = styled.button<IButtonProps>`
   background-color: ${({ primary }) => (primary ? '#0D47A1' : 'red')};
   padding: 0.75em 1.5em;
   color: white;
+  min-width: ${({ primary }) => (primary ? '300px' : 'initial')};
   font-size: 1.5rem;
   text-transform: uppercase;
   font-family: 'Raleway', sans-serif;

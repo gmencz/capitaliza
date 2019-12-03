@@ -8,7 +8,7 @@ const Contact: FC = () => {
   return (
     <Layout title="Capitaliza - Contacta con nosotros">
       <section className="contact__wrapper">
-        <h1>Contacta con nosotros</h1>
+        <h1>CONTACTAR</h1>
         <Form action="lmao">
           <div className="form-group">
             <label htmlFor="nombre">Nombre de pila</label>
@@ -51,7 +51,9 @@ const Contact: FC = () => {
             />
           </div>
           <div className="form-group">
-            <label htmlFor="mensaje">Mensaje</label>
+            <label style={{ alignSelf: 'flex-start' }} htmlFor="mensaje">
+              Mensaje
+            </label>
             <textarea
               name="mensaje"
               placeholder="Comentanos un poco sobre el tema indicado"
@@ -61,7 +63,7 @@ const Contact: FC = () => {
             ></textarea>
           </div>
           <Button btnType="submit" primary>
-            Contactar con Capitaliza
+            CONTACTAR
           </Button>
         </Form>
       </section>
