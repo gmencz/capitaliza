@@ -15,6 +15,7 @@ export const InfoCard = styled.article<IInfoCardProps>`
   p {
     font-weight: bold;
     font-size: 1.8rem;
+    text-align: justify;
   }
 
   div:nth-of-type(2) {

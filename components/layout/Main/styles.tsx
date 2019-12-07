@@ -34,6 +34,7 @@ export const Main = styled.main<IMainProps>`
       padding: 1.4em;
       box-shadow: 0px 0px 20px -14px rgba(0, 0, 0, 0.75);
       background-color: white;
+      text-align: justify;
     }
   }
 
@@ -43,6 +44,7 @@ export const Main = styled.main<IMainProps>`
     flex-wrap: wrap;
     margin: 72px auto;
     z-index: 2;
+    text-align: justify;
     padding: 0 3.75em;
 
     @media screen and (max-width: 920px) {
@@ -83,6 +85,7 @@ export const Main = styled.main<IMainProps>`
 
         p {
           font-weight: bold;
+          text-align: justify;
         }
       }
     }
@@ -97,6 +100,7 @@ export const Main = styled.main<IMainProps>`
       & > p {
         font-weight: bold;
         margin-bottom: 1em;
+        text-align: justify;
       }
 
       article {
@@ -108,6 +112,7 @@ export const Main = styled.main<IMainProps>`
           font-weight: bold;
           font-size: 1.55rem;
           text-align: left;
+          text-align: justify;
         }
       }
     }

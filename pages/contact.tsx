@@ -56,7 +56,7 @@ const Contact: FC = () => {
             </label>
             <textarea
               name="mensaje"
-              placeholder="Comentanos un poco sobre el tema indicado"
+              placeholder="En qué te podemos ayudar?"
               id="mensaje"
               cols={30}
               rows={6}

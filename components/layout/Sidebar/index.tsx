@@ -80,9 +80,6 @@ const Sidebar: FC = (): JSX.Element => {
       </Burger>
       <ul>
         <MenuItem to="/">Inicio</MenuItem>
-        <li>
-          <a href="https://equantia.com">Grupo equantia</a>
-        </li>
         <MenuItem subLinks={subLinksPBC} isOpenable>
           Prevención Blanqueo Capitales
         </MenuItem>
