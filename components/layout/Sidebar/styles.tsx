@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 export const Sidebar = styled.nav`
   background-color: white;
@@ -74,7 +74,6 @@ export const Sidebar = styled.nav`
     a {
       color: var(--primary-clr);
       text-decoration: none;
-      font-weight: bold;
       cursor: pointer;
       font-size: 1.6rem;
       display: flex;
@@ -95,4 +94,4 @@ export const Sidebar = styled.nav`
       }
     }
   }
-`
+`;

@@ -1,7 +1,7 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 interface IMainProps {
-  isHomepage?: boolean
+  isHomepage?: boolean;
 }
 
 export const Main = styled.main<IMainProps>`
@@ -9,11 +9,22 @@ export const Main = styled.main<IMainProps>`
   flex-direction: column;
   color: rgb(17, 51, 85);
   min-height: calc(100vh - 190px);
-  margin-top: ${props => (props.isHomepage ? '0' : '100px')};
-  padding: ${props => (!props.isHomepage ? '0 4.75em' : undefined)};
+  margin-top: ${(props) => (props.isHomepage ? '0' : '100px')};
+  padding: ${(props) => (!props.isHomepage ? '0 4.75em' : undefined)};
+
+  article {
+    a {
+      text-decoration: none;
+      color: rgb(20, 70, 153);
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
 
   @media screen and (max-width: 400px) {
-    padding: ${props => (!props.isHomepage ? '0 1.5em' : undefined)};
+    padding: ${(props) => (!props.isHomepage ? '0 1.5em' : undefined)};
   }
 
   .contact__wrapper {
@@ -25,17 +36,6 @@ export const Main = styled.main<IMainProps>`
       font-size: 2.75rem;
       margin-bottom: 2em;
     }
-
-    .normative-contact {
-      width: 100%;
-      max-width: 630px;
-      margin-bottom: 48px;
-      font-size: 1.5rem;
-      padding: 1.4em;
-      box-shadow: 0px 0px 20px -14px rgba(0, 0, 0, 0.75);
-      background-color: white;
-      text-align: justify;
-    }
   }
 
   .info-cards__wrapper {
@@ -44,7 +44,6 @@ export const Main = styled.main<IMainProps>`
     flex-wrap: wrap;
     margin: 72px auto;
     z-index: 2;
-    text-align: justify;
     padding: 0 3.75em;
 
     @media screen and (max-width: 920px) {
@@ -61,6 +60,7 @@ export const Main = styled.main<IMainProps>`
     color: white;
     padding-left: 4.5rem;
     padding-right: 1.5rem;
+    margin-top: 80px;
 
     h4 {
       font-size: 2.75rem;
@@ -77,16 +77,17 @@ export const Main = styled.main<IMainProps>`
   }
 
   .obligations__wrapper {
+    margin: 3rem 0;
+
+    & > h2 {
+      font-size: 2.5rem;
+    }
+
     &.prevention-consult {
       article {
         flex-basis: 100%;
         max-width: initial;
         max-width: 1200px;
-
-        p {
-          font-weight: bold;
-          text-align: justify;
-        }
       }
     }
   }
@@ -98,21 +99,12 @@ export const Main = styled.main<IMainProps>`
       }
 
       & > p {
-        font-weight: bold;
         margin-bottom: 1em;
-        text-align: justify;
       }
 
       article {
-        h2 {
-          text-decoration: underline;
-        }
-
         p {
-          font-weight: bold;
           font-size: 1.55rem;
-          text-align: left;
-          text-align: justify;
         }
       }
     }
@@ -128,17 +120,10 @@ export const Main = styled.main<IMainProps>`
       flex-wrap: wrap;
 
       article {
-        flex-basis: 49%;
-        box-shadow: 0px 0px 20px -14px rgba(0, 0, 0, 0.75);
-
-        padding: 1.75em 1.5em 1.75em 1.75em;
-        margin-bottom: 20px;
-        max-width: 700px;
-
         h2 {
           font-size: 1.8rem;
-          margin-bottom: 25px;
-          text-decoration: underline;
+          margin-bottom: 15px;
+          margin-top: 30px;
           color: #0d47a1;
         }
 
@@ -147,7 +132,6 @@ export const Main = styled.main<IMainProps>`
 
           li {
             margin-bottom: 15px;
-            font-weight: bold;
             font-size: 1.55rem;
             display: flex;
             align-items: flex-start;
@@ -167,7 +151,6 @@ export const Main = styled.main<IMainProps>`
           li {
             margin-bottom: 15px;
             margin-left: 1em;
-            font-weight: bold;
             font-size: 1.55rem;
           }
         }
@@ -186,4 +169,4 @@ export const Main = styled.main<IMainProps>`
       text-align: justify;
     }
   }
-`
+`;

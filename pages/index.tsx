@@ -1,17 +1,20 @@
-import Layout from '../components/layout'
-import InfoCard from '../components/infoCard'
-import { FC } from 'react'
+import Layout from '../components/layout';
+import InfoCard from '../components/infoCard';
+import { FC } from 'react';
 
 const Home: FC = (): JSX.Element => (
   <Layout isHomepage={true} title="Capitaliza - Inicio">
     <div
       style={{
         backgroundColor: '#1976d2',
-        background: 'linear-gradient(145deg,#0d47a1,var(--primary-clr))',
-        height: '600px',
+        backgroundImage:
+          'linear-gradient(0deg,rgba(0,0,0,.375),rgba(0,0,0,.375)),url(/homepage.jpg)',
+        minHeight: '80vh',
         display: 'flex',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
         alignItems: 'center',
-        justifyContent: 'center'
+        justifyContent: 'center',
       }}
     >
       <div className="hero">
@@ -22,8 +25,9 @@ const Home: FC = (): JSX.Element => (
         <h4>Gestión socialmente responsable.</h4>
       </div>
     </div>
-    <div className="info-cards__wrapper">
-      <InfoCard imageSource="/benefits.png">
+    <section className="info-cards__wrapper">
+      <InfoCard imageSource="/benefits.jpg">
+        <h2>Beneficios</h2>
         <p>
           El retorno máximo para el accionista y la maximización del beneficio a
           corto plazo ya no son los únicos objetivos de una empresa, aunque
@@ -32,7 +36,8 @@ const Home: FC = (): JSX.Element => (
           son cada vez mayores.
         </p>
       </InfoCard>
-      <InfoCard imageSource="/powerful-hero.png">
+      <InfoCard imageSource="/power.jpg">
+        <h2>Poder e influencia</h2>
         <p>
           Las empresas han incrementado su poder económico y su influencia
           sociopolítica sobre comunidades y países enteros, pasando a ser
@@ -41,7 +46,8 @@ const Home: FC = (): JSX.Element => (
           internet…
         </p>
       </InfoCard>
-      <InfoCard imageSource="/manage-hero.png">
+      <InfoCard imageSource="/manage.jpg">
+        <h2>Gestión responsable</h2>
         <p>
           Para integrar un sistema de gestión socialmente responsable deben
           identificarse los intereses particulares de cada empresa o entidad,
@@ -50,7 +56,8 @@ const Home: FC = (): JSX.Element => (
           dedicarse a ello.
         </p>
       </InfoCard>
-      <InfoCard imageSource="/finance-hero.png">
+      <InfoCard imageSource="/integrity.jpg">
+        <h2>Integridad</h2>
         <p>
           En una sociedad globalizada como la actual y en un contexto de
           responsabilidad social, toma relevancia el sector finaciero y
@@ -60,7 +67,8 @@ const Home: FC = (): JSX.Element => (
           financiero y de otros sectores de actividad económica relacionados.
         </p>
       </InfoCard>
-      <InfoCard imageSource="/initiative-hero.png">
+      <InfoCard imageSource="/decision-making.jpg">
+        <h2>Toma de decisiones</h2>
         <p>
           Existen muchas iniciativas y recomendaciones sobre las que se puede
           trabajar en estas materias pero se deben elegir los objetivos con
@@ -69,7 +77,8 @@ const Home: FC = (): JSX.Element => (
           y sus procedimientos de gestión, el segundo.
         </p>
       </InfoCard>
-      <InfoCard imageSource="/integration-hero.png">
+      <InfoCard imageSource="/integration.jpg">
+        <h2>Integración RSC</h2>
         <p>
           El verdadero desafío no es aceptar la RSC, sino integrarla en toda la
           organización. Sin duda en un futuro no muy lejano las empresas que no
@@ -77,8 +86,8 @@ const Home: FC = (): JSX.Element => (
           “marginales”.
         </p>
       </InfoCard>
-    </div>
+    </section>
   </Layout>
-)
+);
 
-export default Home
+export default Home;

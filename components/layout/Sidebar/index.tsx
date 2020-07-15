@@ -1,36 +1,36 @@
-import { FC, useState, Fragment } from 'react'
-import * as SC from './styles'
-import Link from '../../activeLink'
-import { Burger } from '../Header/styles'
+import { FC, useState, Fragment } from 'react';
+import * as SC from './styles';
+import Link from '../../activeLink';
+import { Burger } from '../Header/styles';
 import {
   subLinksPBC,
   subLinksAC,
   subLinksSRS,
   subLinksRSC,
-  subLinksSPB
-} from './subLinks'
-import Arrow from './Arrow'
-import { useSidebarValue } from '../../../context/Sidebar/Provider'
-import { useClickOutside } from '../../../hooks/useClickOutside'
+  subLinksSPB,
+} from './subLinks';
+import Arrow from './Arrow';
+import { useSidebarValue } from '../../../context/Sidebar/Provider';
+import { useClickOutside } from '../../../hooks/useClickOutside';
 
 interface ISubLink {
-  to: string
-  text: string
+  to: string;
+  text: string;
 }
 
 interface IMenuItemProps {
-  to?: string
-  isOpenable?: boolean
-  subLinks?: ISubLink[]
+  to?: string;
+  isOpenable?: boolean;
+  subLinks?: ISubLink[];
 }
 
 const MenuItem: FC<IMenuItemProps> = ({
   to,
   isOpenable,
   subLinks,
-  children
+  children,
 }): JSX.Element => {
-  const [isToggled, setIsToggled] = useState(false)
+  const [isToggled, setIsToggled] = useState(false);
 
   return (
     <li
@@ -60,12 +60,12 @@ const MenuItem: FC<IMenuItemProps> = ({
         </Link>
       )}
     </li>
-  )
-}
+  );
+};
 
 const Sidebar: FC = (): JSX.Element => {
-  const [{ isSidebarOpen }, dispatch] = useSidebarValue()
-  const { ref } = useClickOutside('CLOSE_SIDEBAR')
+  const [{ isSidebarOpen }, dispatch] = useSidebarValue();
+  const { ref } = useClickOutside('CLOSE_SIDEBAR');
 
   return (
     <SC.Sidebar ref={ref} className={isSidebarOpen ? 'open' : undefined}>
@@ -95,13 +95,9 @@ const Sidebar: FC = (): JSX.Element => {
         <MenuItem subLinks={subLinksAC} isOpenable>
           Atención al Cliente
         </MenuItem>
-        <MenuItem to="/terms/ethical-management">
-          Política de Gestión Ética
-        </MenuItem>
-        <MenuItem to="/terms/privacy">Política de Privacidad</MenuItem>
       </ul>
     </SC.Sidebar>
-  )
-}
+  );
+};
 
-export default Sidebar
+export default Sidebar;

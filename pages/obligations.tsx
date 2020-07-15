@@ -1,5 +1,5 @@
-import { FC } from 'react'
-import Layout from '../components/layout'
+import { FC } from 'react';
+import Layout from '../components/layout';
 
 const Obligations: FC = (): JSX.Element => {
   return (
@@ -8,7 +8,7 @@ const Obligations: FC = (): JSX.Element => {
       title="Capitaliza - Sujetos obligados / Obligaciones"
     >
       <section className="obligations__wrapper">
-        <h1>Sujetos Obligados / Obligaciones</h1>
+        <h2>Sujetos Obligados / Obligaciones</h2>
         <div>
           <article>
             <h2>Obligaciones</h2>
@@ -109,7 +109,7 @@ const Obligations: FC = (): JSX.Element => {
         </div>
       </section>
     </Layout>
-  )
-}
+  );
+};
 
-export default Obligations
+export default Obligations;

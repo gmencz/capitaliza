@@ -1,15 +1,15 @@
-import { FC } from 'react'
-import * as SC from './styles'
+import { FC } from 'react';
+import * as SC from './styles';
 
 export interface IInfoCardProps {
-  imageSource?: string
+  imageSource?: string;
 }
 
 const InfoCard: FC<IInfoCardProps> = ({ children, imageSource }) => (
   <SC.InfoCard>
-    {imageSource && <SC.HeroImage imageSource={imageSource} />}
+    {imageSource && <img src={imageSource} alt="Hero" />}
     <div>{children}</div>
   </SC.InfoCard>
-)
+);
 
-export default InfoCard
+export default InfoCard;

@@ -1,70 +1,69 @@
-import styled from 'styled-components'
-import { IInfoCardProps } from './index'
+import styled from 'styled-components';
+import { IInfoCardProps } from './index';
 
 export const InfoCard = styled.article<IInfoCardProps>`
   z-index: 2;
-  margin-bottom: 4em;
   display: flex;
-  height: 310px;
-  min-height: 310px;
   align-items: center;
-  max-width: 1000px;
-  color: rgb(17, 51, 85);
-  border: 2px solid rgb(245, 247, 248);
+  max-width: 1100px;
+  width: 100%;
+
+  &:not(:last-of-type) {
+    margin-bottom: 10rem;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1.4;
+    color: rgb(17, 51, 85);
+    margin-bottom: 1rem;
+  }
 
   p {
-    font-weight: bold;
-    font-size: 1.8rem;
-    text-align: justify;
+    font-size: 1.95rem;
+    font-weight: 400;
+    line-height: 1.5;
+    opacity: 0.75;
+    color: #000;
   }
 
-  div:nth-of-type(2) {
+  & > img {
+    width: 100%;
+    max-width: 375px;
+    margin-right: 5rem;
+    height: 300px;
+    object-fit: cover;
+  }
+
+  & > div {
     flex: 1;
-    padding-right: 10em;
   }
 
-  @media screen and (max-width: 920px) {
-    max-width: 350px;
-    flex-direction: column;
-    padding: 0 2em;
-    justify-content: center;
-    height: initial;
-    min-height: 730px;
-
-    div:nth-of-type(2) {
-      padding-right: 0;
-      display: flex;
+  &:nth-of-type(even) {
+    & > img {
+      order: 2;
+      margin-right: 0;
+      margin-left: 5rem;
     }
   }
 
-  @media screen and (max-width: 780px) {
-    max-width: 1000px;
-    min-height: initial;
-    height: fit-content;
-    padding: 2em;
+  @media screen and (max-width: 900px) {
+    flex-direction: column;
+    align-items: flex-start;
+
+    & > img {
+      order: 2;
+      margin-top: 3rem;
+      max-width: 100%;
+    }
+
+    &:nth-of-type(even) {
+      & > img {
+        order: 2;
+        margin-right: 0;
+        margin-left: 0;
+      }
+    }
   }
-`
-
-interface IHeroImageProps {
-  imageSource: string
-}
-
-export const HeroImage = styled.div<IHeroImageProps>`
-  flex: 1;
-  height: 100%;
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-image: ${props => `url('${props.imageSource}')`};
-
-  @media screen and (max-width: 920px) {
-    width: 100%;
-    background-position: left;
-    min-height: 50%;
-  }
-
-  @media screen and (max-width: 780px) {
-    margin-bottom: 3em;
-    min-height: 200px;
-  }
-`
+`;

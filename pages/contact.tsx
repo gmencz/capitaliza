@@ -1,8 +1,8 @@
-import { FC } from 'react'
-import Layout from '../components/layout'
-import Form from '../components/form'
-import Input from '../components/form/input'
-import Button from '../components/button'
+import { FC } from 'react';
+import Layout from '../components/layout';
+import Form from '../components/form';
+import Input from '../components/form/input';
+import Button from '../components/button';
 
 const Contact: FC = () => {
   return (
@@ -68,7 +68,7 @@ const Contact: FC = () => {
         </Form>
       </section>
     </Layout>
-  )
-}
+  );
+};
 
-export default Contact
+export default Contact;

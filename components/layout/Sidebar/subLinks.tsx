@@ -1,71 +1,71 @@
 interface ISubLink {
-  to: string
-  text: string
+  to: string;
+  text: string;
 }
 
 export const subLinksPBC: Array<ISubLink> = [
   {
     to: '/obligations',
-    text: 'Sujetos Obligados / Obligaciones'
+    text: 'Sujetos Obligados / Obligaciones',
   },
   {
     to: '/penalty-system',
-    text: 'Régimen Sancionador'
-  }
-]
+    text: 'Régimen Sancionador',
+  },
+];
 
 export const subLinksSPB: Array<ISubLink> = [
   {
     to: '/prevention-consult',
-    text: 'Consultoría en Prevención del Blanqueo de Capitales y FT'
+    text: 'Consultoría en Prevención del Blanqueo de Capitales y FT',
   },
   {
     to: '/prevention-audit',
-    text: 'Auditoría en Prevención del Blanqueo de Capitales y FT'
+    text: 'Auditoría en Prevención del Blanqueo de Capitales y FT',
   },
   {
     to: '/formation',
-    text: 'Formación'
-  }
-]
+    text: 'Formación',
+  },
+];
 
 export const subLinksRSC: Array<ISubLink> = [
   {
     to: '/dimensions',
-    text: 'Dimensiones'
+    text: 'Dimensiones',
   },
   {
     to: '/benefits',
-    text: 'Beneficios'
-  }
-]
+    text: 'Beneficios',
+  },
+];
 
 export const subLinksSRS: Array<ISubLink> = [
   {
     to: '/consultory-rsc',
-    text: 'Consultoría RSC'
+    text: 'Consultoría RSC',
   },
   {
     to: '/auditory-rsc',
-    text: 'Auditoría RSC'
+    text: 'Auditoría RSC',
   },
   {
     to: '/formation-rsc',
-    text: 'Formación'
-  }
-]
+    text: 'Formación',
+  },
+];
 
 export const subLinksAC: Array<ISubLink> = [
   {
     to: '/contact',
-    text: 'Contacta'
+    text: 'Contacta',
   },
   {
     to: '/suggestions',
-    text: 'Sugerencias'
+    text: 'Sugerencias',
   },
   {
     to: '/budget-request',
-    text: 'Solicítanos un presupuesto'
-  }
-]
+    text: 'Solicítanos un presupuesto',
+  },
+];
