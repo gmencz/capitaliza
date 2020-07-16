@@ -1,12 +1,10 @@
-import { FC } from 'react'
-import * as SC from './styles'
+import { FC, FormHTMLAttributes } from 'react';
+import * as SC from './styles';
 
-interface IFormProps {
-  action?: string
-}
+interface IFormProps extends FormHTMLAttributes<any> {}
 
-const Form: FC<IFormProps> = ({ children, action = '#' }) => (
-  <SC.Form action={action}>{children}</SC.Form>
-)
+const Form: FC<IFormProps> = ({ children, ...props }) => (
+  <SC.Form {...props}>{children}</SC.Form>
+);
 
-export default Form
+export default Form;

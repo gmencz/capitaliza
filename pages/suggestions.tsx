@@ -24,7 +24,7 @@ const Suggestions: FC = () => {
     <Layout title="Capitaliza - Sugerencias">
       <section className="contact__wrapper">
         <h1>Sugerencias</h1>
-        <Form action="#">
+        <Form method="POST" action="https://formspree.io/xpzyoybw">
           <div className="form-group">
             <label style={{ alignSelf: 'flex-start' }}>
               Relación con CAPITALIZA

@@ -9,7 +9,7 @@ const Contact: FC = () => {
     <Layout title="Capitaliza - Contacta con nosotros">
       <section className="contact__wrapper">
         <h1>CONTACTAR</h1>
-        <Form action="lmao">
+        <Form method="POST" action="https://formspree.io/xpzyoybw">
           <div className="form-group">
             <label htmlFor="nombre">Nombre de pila</label>
             <Input
@@ -41,11 +41,11 @@ const Contact: FC = () => {
             />
           </div>
           <div className="form-group">
-            <label htmlFor="email">Tema del mensaje</label>
+            <label htmlFor="asunto">Tema del mensaje</label>
             <Input
-              type="email"
-              name="email"
-              id="email"
+              type="text"
+              name="asunto"
+              id="asunto"
               placeholder="Sobre qué nos contactas?"
               required
             />

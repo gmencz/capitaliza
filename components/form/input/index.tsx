@@ -1,14 +1,8 @@
-import { FC } from 'react'
-import * as SC from './styles'
+import { FC, InputHTMLAttributes } from 'react';
+import * as SC from './styles';
 
-interface IInputProps {
-  type: string
-  name: string
-  id: string
-  required: boolean
-  placeholder?: string
-}
+interface IInputProps extends InputHTMLAttributes<any> {}
 
-const Input: FC<IInputProps> = ({ ...props }) => <SC.Input {...props} />
+const Input: FC<IInputProps> = ({ ...props }) => <SC.Input {...props} />;
 
-export default Input
+export default Input;

@@ -1,34 +1,20 @@
 import { FC, useState } from 'react';
 import Layout from '../components/layout';
 import Form from '../components/form';
-import Radio from '../components/radio';
 import Input from '../components/form/input';
 import { Button } from '../components/button/styles';
 
 const BudgetRequest: FC = () => {
-  const [firstSelectedOption, setFirstSelectedOption] = useState('cliente');
-  const [secondSelectedOption, setSecondSelectedOption] = useState(
-    'sugerencia'
-  );
-
-  const changeHandler = (e) => {
-    setFirstSelectedOption(e.target.value);
-  };
-
-  const changeHandler2 = (e) => {
-    setSecondSelectedOption(e.target.value);
-  };
-
   return (
     <Layout title="Capitaliza - Solicitud presupuesto">
       <section className="contact__wrapper">
         <h1>Solicítanos presupuesto</h1>
-        <Form>
+        <Form method="POST" action="https://formspree.io/xpzyoybw">
           <div className="form-group">
             <label htmlFor="tipo-presupuesto">Tipo de presupuesto</label>
             <select name="tipo-presupuesto" id="tipo-presupuesto">
-              <option value="consultoria-rsc">Consultoría RSC</option>
-              <option value="auditoria-rsc">Auditoría RSC</option>
+              <option value="Consultoria RSC">Consultoría RSC</option>
+              <option value="Auditoria RSC">Auditoría RSC</option>
               <option value="formacion">Formación</option>
               <option value="Consultoria en Prevencion del Blanqueo de Capitales y FT">
                 Consultoría en Prevención del Blanqueo de Capitales y FT
@@ -94,13 +80,13 @@ const BudgetRequest: FC = () => {
             />
           </div>
           <div className="form-group">
-            <label htmlFor="sector-tipoactividad">
+            <label htmlFor="sector-tipo-actividad">
               Sector - Tipo de actividad
             </label>
             <Input
               type="text"
-              name="sector-tipoactividad"
-              id="sector-tipoactividad"
+              name="sector-tipo-actividad"
+              id="sector-tipo-actividad"
               placeholder="Transportes"
               required
             />
